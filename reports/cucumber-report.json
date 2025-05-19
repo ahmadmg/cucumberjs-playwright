@@ -1,0 +1,63 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "main-page;successful-login",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Successful Login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "A web browser is at the main page",
+            "match": {
+              "location": "file:\\C:\\dev\\cucumberjs-playwright\\tests\\step-definitions\\google.steps.ts:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6359799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "The user Search",
+            "match": {
+              "location": "file:\\C:\\dev\\cucumberjs-playwright\\tests\\step-definitions\\google.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 719499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "The user should see the result",
+            "match": {
+              "location": "file:\\C:\\dev\\cucumberjs-playwright\\tests\\step-definitions\\google.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1145700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "main-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Main Page",
+    "tags": [],
+    "uri": "tests\\features\\google.feature"
+  }
+]
