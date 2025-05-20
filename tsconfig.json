@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es2020", // Or "esnext"
-    "module": "nodenext", // Or "esnext" for older Node.js versions
+    "target": "es2020", 
+    "module": "nodenext", 
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist", // Where compiled JS files will go
-    "rootDir": "./",    // Where your source TS files are
+    "outDir": "./dist", 
+    "rootDir": "./",   
     "baseUrl": "./",
     "paths": {
       "*": ["node_modules/*"]

@@ -6,14 +6,17 @@ import { page } from "../../support/hooks";
 
 Given("A web browser is at the main page", async function () {
 
-  await page.goto('https://playwright.dev/');
+  await page.goto('https://www.google.com/');
   console.log("Navigating to main page...");
 });
 
-When("The user Search", async function () {
-  // Example: await page.fill('input[name="q"]', 'Playwright');
-  console.log("Entering search...");
-  await page.waitForTimeout(1000)
+When("The user Search for {string}", async function (srch) {
+  
+  const searchInput = page.locator('textarea');
+  await searchInput.fill(srch);
+  await searchInput.press('Enter');
+  console.log(`Searching for ${srch}...`);
+
 });
 
 Then("The user should see the result", async function () {
