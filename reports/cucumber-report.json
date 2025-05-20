@@ -10,16 +10,24 @@
         "name": "Successful Login",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2289728199
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 3,
             "name": "A web browser is at the main page",
             "match": {
-              "location": "file:\\C:\\dev\\cucumberjs-playwright\\tests\\step-definitions\\google.steps.ts:3"
+              "location": "tests\\step-definitions\\google.steps.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 6359799
+              "duration": 420343300
             }
           },
           {
@@ -28,11 +36,11 @@
             "line": 4,
             "name": "The user Search",
             "match": {
-              "location": "file:\\C:\\dev\\cucumberjs-playwright\\tests\\step-definitions\\google.steps.ts:7"
+              "location": "tests\\step-definitions\\google.steps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 719499
+              "duration": 1021628799
             }
           },
           {
@@ -41,11 +49,19 @@
             "line": 5,
             "name": "The user should see the result",
             "match": {
-              "location": "file:\\C:\\dev\\cucumberjs-playwright\\tests\\step-definitions\\google.steps.ts:11"
+              "location": "tests\\step-definitions\\google.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 1145700
+              "duration": 1141099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 396146700
             }
           }
         ],

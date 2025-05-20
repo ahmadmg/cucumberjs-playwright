@@ -12,8 +12,8 @@ export default {
     },
     parallel: 1,
     serial: true,
-    retry: 2,
-    paths: ['tests/features/**/*.feature'],
+    // retry: 2,
+    paths: ['tests/features/*.feature'],
     require: [
         'tests/step-definitions/*.ts',
         'tests/support/**/*.ts',
