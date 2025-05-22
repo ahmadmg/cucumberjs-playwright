@@ -9,5 +9,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
-  "scripts": {}
+  "scripts": {
+    "report": "powershell Start-Process .\\reports\\cucumber-report.html",
+    "clean": "powershell Remove-Item -Recurse -Force .\\reports\\* , .\\traces\\* , .\\videos\\*, .\\screenshot\\*"
+  }
 }

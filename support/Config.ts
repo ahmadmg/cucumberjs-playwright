@@ -1,5 +1,5 @@
 import { LaunchOptions } from '@playwright/test';
-
+import 'dotenv/config';
 const browserOptions: LaunchOptions = {
   headless: false,
   slowMo: 0,
@@ -13,7 +13,7 @@ const browserOptions: LaunchOptions = {
 export const config = {
   browser: process.env.BROWSER || 'chromium',
   browserOptions,
-  BASE_URL: `https://google.com`,
-  API_URL: `https://google.com`,
+  BASE_URL: process.env.BASE_URL || 'https://google.com',
+  API_URL: process.env.API_URL || `https://google.com`,
   IMG_THRESHOLD: { threshold: 0.4 },
 }
