@@ -5,9 +5,7 @@ import { config } from "../../support/Config";
 import { page } from "../../support/hooks";
 
 Given("A web browser is at the main page", async function () {
-
   await page.goto(`${config.BASE_URL}`);
-
 });
 
 When('I click {string} button', async function (buttonName) {
@@ -15,10 +13,10 @@ When('I click {string} button', async function (buttonName) {
 })
 
 When('The user searches for {string}', async function (searchWord) {
-await page.getByRole("searchbox", { name: "Search" }).fill(searchWord);
+  await page.getByRole("searchbox", { name: "Search" }).fill(searchWord);
 });
 
 
 Then('The user should see relevant search results for {string}', async function (searchWord) {
-await expect(page.getByText(searchWord).first()).toBeVisible();
+  await expect(page.getByText(searchWord).first()).toBeVisible();
 });

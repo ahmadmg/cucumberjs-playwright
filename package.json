@@ -10,7 +10,8 @@
     "typescript": "^5.8.3"
   },
   "scripts": {
+    "test":"cucumber-js",
     "report": "powershell Start-Process .\\reports\\cucumber-report.html",
-    "clean": "powershell Remove-Item -Recurse -Force .\\reports\\* , .\\traces\\* , .\\videos\\*, .\\screenshot\\*"
+    "clean:artifacts": "powershell Remove-Item -Recurse -Force .\\reports\\* , .\\traces\\* , .\\videos\\*, .\\screenshot\\*"
   }
 }
