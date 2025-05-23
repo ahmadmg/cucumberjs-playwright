@@ -1,16 +1,18 @@
 {
   "dependencies": {
-    "@cucumber/cucumber": "^11.3.0",
     "dotenv": "^16.5.0"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@cucumber/messages": "^27.2.0",
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.15.19",
+    "allure-cucumberjs": "^3.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "scripts": {
-    "test":"cucumber-js",
+    "test": "cucumber-js",
     "report": "powershell Start-Process .\\reports\\cucumber-report.html",
     "clean:artifacts": "powershell Remove-Item -Recurse -Force .\\reports\\* , .\\traces\\* , .\\videos\\*, .\\screenshot\\*"
   }

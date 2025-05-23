@@ -3,11 +3,11 @@ export default {
         [
             'html:reports/cucumber-report.html',
             'json:reports/cucumber-report.json',
-            // "allure-cucumberjs/reporter"
+            "allure-cucumberjs/reporter"
         ],
     // How the snippet should look
     formatOptions: {
-        // resultsDir: "allure-results",
+        resultsDir: "allure-results",
         snippetInterface: 'async-await'
     },
     parallel: 1,
