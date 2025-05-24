@@ -1,7 +1,7 @@
 import { LaunchOptions } from '@playwright/test';
 import 'dotenv/config';
 const browserOptions: LaunchOptions = {
-  headless: false,
+  headless: process.env.HEADLESS === 'true',
   slowMo: 0,
   args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream'],
   firefoxUserPrefs: {

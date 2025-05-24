@@ -19,6 +19,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Set HEADLESS for CI
+        run: echo "HEADLESS=true" >> $GITHUB_ENV
+
       - name: Run tests
         run: npm test
 
