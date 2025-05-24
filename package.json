@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "cucumber-js",
-    "report": "powershell Start-Process .\\reports\\cucumber-report.html",
+    "report": "powershell Start-Process .\\reports\\cucumber-report.html","allure":"allure serve allure-results",
     "clean:artifacts": "powershell Remove-Item -Recurse -Force .\\reports\\* , .\\traces\\* , .\\videos\\*, .\\screenshot\\*"
   }
 }
