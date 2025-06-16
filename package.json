@@ -12,7 +12,7 @@
     "typescript": "^5.8.3"
   },
   "scripts": {
-    "test": "cucumber-js",
+    "test": "cucumber-js --format html:reports/cucumber-report.html",
     "report": "powershell Start-Process .\\reports\\cucumber-report.html",
     "allure": "allure serve allure-results",
     "clean:artifacts": "powershell Remove-Item -Recurse -Force .\\reports\\* , .\\traces\\* , .\\videos\\*, .\\screenshot\\*"
