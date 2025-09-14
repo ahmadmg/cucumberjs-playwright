@@ -3,7 +3,7 @@
     "dotenv": "^17.2.1"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^12.1.0",
+    "@cucumber/cucumber": "^12.2.0",
     "@cucumber/messages": "^28.1.0",
     "@playwright/test": "^1.55.0",
     "@types/node": "^22.15.19",
