@@ -13,7 +13,7 @@ const browserOptions: LaunchOptions = {
 export const config = {
   browser: process.env.BROWSER || 'chromium',
   browserOptions,
-  BASE_URL: process.env.BASE_URL || 'https://google.com',
-  API_URL: process.env.API_URL || `https://google.com`,
+  BASE_URL: process.env.BASE_URL || 'https://github.com/ahmadmg',
+  API_URL: process.env.API_URL || `https://github.com/ahmadmg`,
   IMG_THRESHOLD: { threshold: 0.4 },
 }
