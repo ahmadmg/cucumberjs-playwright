@@ -8,7 +8,7 @@ export default {
   formatOptions: {
     resultsDir: "allure-results",
     snippetInterface: "async-await",
-    colorsEnabled: true,
+    //colorsEnabled: true,
   },
    parallel: process.env.CI ? 3 : 1,
   retry: process.env.CI ? 2 : 0,
