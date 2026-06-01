@@ -9,6 +9,6 @@ Feature: Main Page Search Multi
         When The user searches for "<searchWord>"
         Then The user should see relevant search results for "<searchAssert>"
         Examples:
-            | scenarioID | searchWord                 | searchAssert               |
-            | 1          | Test user-visible behavior | Test user-visible behavior |
-            | 2          | Getting started - VS Code  | Getting started - VS Code  |
+            | scenarioID | searchWord                  | searchAssert                |
+            | 1          | Test user-visible behavior  | Test user-visible behavior  |
+            | 2          | Using the VS Code Extension | Using the VS Code Extension |
